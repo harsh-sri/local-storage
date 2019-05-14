@@ -1,0 +1,26 @@
+{
+  "name": "react-storage",
+  "version": "1.0.0",
+  "description": "This module helps you to access Local Storage easily",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harsh-sri/local-storage.git"
+  },
+  "keywords": [
+    "ReactJs",
+    "local-storage",
+    "react-local-storage",
+    "reactJs-storage",
+    "access-local-storage-using-reactjs"
+  ],
+  "author": "github.com/harsh-sri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/harsh-sri/local-storage/issues"
+  },
+  "homepage": "https://github.com/harsh-sri/local-storage#readme"
+}
