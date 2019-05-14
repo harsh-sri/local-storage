@@ -21,6 +21,17 @@ exports.localStorage = {
         catch (e) {
             console.error(e);
         }
+    },
+
+    set: function (key, value) {
+        try {
+            if(window && window.localStorage) {
+                window.localStorage.setItem(key, value);
+            }
+        }
+        catch(e) {
+            console.error(e);
+        }
     }
 
 }
