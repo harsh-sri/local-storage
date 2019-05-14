@@ -9,6 +9,18 @@ exports.localStorage = {
         catch(e) {
             console.error(e);
         }
+    },
+
+    getObj: function (key) {
+        try {
+            if(window && window.localStorage) {
+                let obj = window.localStorage.getItem(key);
+                return JSON.parse(obj);
+            }
+        }
+        catch (e) {
+            console.error(e);
+        }
     }
 
 }
