@@ -43,6 +43,17 @@ exports.localStorage = {
         catch(e) {
             console.error(e);
         }
+    },
+
+    remove: function (key) {
+        try {
+            if(window && window.localStorage) {
+                return window.localStorage.removeItem(key);
+            }
+        }
+        catch(e) {
+            console.error(e);
+        }
     }
 
 }
