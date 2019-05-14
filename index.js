@@ -54,6 +54,17 @@ exports.localStorage = {
         catch(e) {
             console.error(e);
         }
+    },
+
+    clear: function () {
+        try {
+            if(window && window.localStorage) {
+                return window.localStorage.clear();
+            }
+        }
+        catch(e) {
+            console.error(e);
+        }
     }
 
 }
