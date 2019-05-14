@@ -32,6 +32,17 @@ exports.localStorage = {
         catch(e) {
             console.error(e);
         }
+    },
+
+    get: function (key, value) {
+        try {
+            if(window && window.localStorage) {
+                return window.localStorage.getItem(key);
+            }
+        }
+        catch(e) {
+            console.error(e);
+        }
     }
 
 }
